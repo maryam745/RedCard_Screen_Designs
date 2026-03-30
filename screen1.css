@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #f5f5f5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Main container */
+.form_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+
+    background-color: rgb(158, 2, 2);
+    padding: 40px;
+    border-bottom-right-radius: 80px;
+    margin: 20px;
+}
+
+/* LEFT SIDE */
+.submission {
+    max-width: 40%;
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.submission p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+/* RIGHT SIDE */
+.item2 {
+    width: 50%;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
+
+/* Inputs */
+input, textarea {
+    padding: 12px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+}
+
+/* Placeholder color */
+::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Textarea */
+textarea {
+    min-height: 80px;
+    resize: none;
+}
+
+/* Checkbox + label */
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Small note text */
+.note {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Submit button */
+.submit_btn {
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    min-width: 10px;
+}
+
