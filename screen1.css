@@ -18,7 +18,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    background-color: rgb(187, 74, 74);
+    background-color: #8B332F;
     padding: 100px;
     margin: 20px;
     align-items: center;
@@ -31,11 +31,21 @@ body {
     );
 }
 
+.logo {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
 /* LEFT SIDE */
 .submission {
     max-width: 40%;
-    color: white;
+    padding-top: 30px;
+    padding-bottom: 100px;
 
+}
+.submission h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
 }
 .submission p{
     color: black;
@@ -43,7 +53,6 @@ body {
 h1 {
     font-size: 60px;
 }
-
 
 h2 {
     font-size: 24px;
@@ -88,6 +97,10 @@ input[type="checkbox"] {
 textarea {
     min-height: 80px;
     resize: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+textarea::placeholder {
+font-size: smaller;
 }
 
 /* Checkbox + label */
@@ -112,5 +125,6 @@ label {
     font-weight: bold;
     margin-top: 20px;
     min-width: 10px;
+    max-width: 350px;
 }
 
