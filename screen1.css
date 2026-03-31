@@ -1,7 +1,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 10px 0px 10px 0px;
     box-sizing: border-box;
 }
 
@@ -16,30 +16,34 @@ body {
 .form_container {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
     flex-wrap: wrap;
 
-    background-color: rgb(158, 2, 2);
-    padding: 40px;
-    border-bottom-right-radius: 80px;
+    background-color: rgb(187, 74, 74);
+    padding: 100px;
     margin: 20px;
+    align-items: center;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 80px),
+        calc(100% - 80px) 100%,
+        0 100%
+    );
 }
 
 /* LEFT SIDE */
 .submission {
     max-width: 40%;
     color: white;
-}
 
+}
+.submission p{
+    color: black;
+}
 h1 {
     font-size: 60px;
-    margin-bottom: 20px;
 }
 
-.submission p {
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
 
 h2 {
     font-size: 24px;
@@ -74,6 +78,12 @@ input, textarea {
     color: rgba(255, 255, 255, 0.8);
 }
 
+input[type="checkbox"] {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
 /* Textarea */
 textarea {
     min-height: 80px;
