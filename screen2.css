@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.poster {
+  width: 100%;
+  max-width: 920px;
+  background: #fff;
+}
+
+.inner {
+  width: 100%;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+
+.hero {
+  background: #9f2027;
+  color: white;
+  padding: 28px 0 58px;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 88% 100%, 0 100%);
+}
+
+.logo {
+  width: 78px;
+  display: block;
+  margin-bottom: 26px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.hero h3 {
+  font-size: 17px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 28px;
+}
+
+.desc {
+  max-width: 690px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #ffffff;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+
+.clubs-area {
+  background: #ffffff;
+  padding: 40px 0 56px;
+}
+
+.club-section {
+  margin-bottom: 72px;
+}
+
+.club-title {
+  position: relative;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 900;
+  color: #000;
+  padding-left: 28px;
+  margin-bottom: 28px;
+  letter-spacing: -0.5px;
+}
+
+.club-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-bottom: 18px solid #9f2027;
+}
+
+.club-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+  align-items: start;
+  justify-items: center;
+}
+
+.club {
+  text-align: center;
+}
+
+.club img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.club p {
+  color: #9f2027;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+.club small {
+  display: block;
+  color: #111;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+
+.footer {
+  background: #9f2027;
+  color: white;
+  padding: 50px 0 56px;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 88% 100%, 0 100%);
+}
+
+.footer h2 {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.15;
+  max-width: 620px;
+  text-align: left;
+}
