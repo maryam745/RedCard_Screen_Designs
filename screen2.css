@@ -1,4 +1,4 @@
-
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -8,83 +8,100 @@
 
 body {
   background: #ffffff;
-  display: flex;
-  justify-content: center;
 }
 
+/* MAIN WRAPPER */
 .poster {
   width: 100%;
-  max-width: 920px;
   background: #fff;
 }
 
+/* COMMON INNER SPACE */
 .inner {
   width: 100%;
-  padding-left: 44px;
-  padding-right: 44px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
   background: #9f2027;
   color: white;
-  padding: 28px 0 58px;
+  padding: 35px 0 60px;
   position: relative;
 
+  /* bottom right diagonal cut */
   clip-path: polygon(0 0, 100% 0, 100% 87%, 88% 100%, 0 100%);
 }
 
+/* Sirf hero ka content control */
+.hero .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 420px;
+}
+
 .logo {
-  width: 78px;
+  width: 90px;
   display: block;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 52px;
   font-weight: 900;
   line-height: 1;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   letter-spacing: -1px;
 }
 
 .hero h3 {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 800;
   color: #000;
   margin-bottom: 28px;
 }
 
 .desc {
-  max-width: 690px;
-  font-size: 13px;
+  max-width: 760px;
+  font-size: 14px;
   line-height: 1.8;
   color: #ffffff;
   margin-bottom: 18px;
   text-align: left;
 }
 
-
+/* =========================
+   CLUBS AREA
+========================= */
 .clubs-area {
   background: #ffffff;
-  padding: 40px 0 56px;
+  padding: 45px 0 60px;
 }
 
+/* EACH SECTION */
 .club-section {
-  margin-bottom: 72px;
+  margin-bottom: 75px;
 }
 
+/* TITLE */
 .club-title {
   position: relative;
   display: inline-block;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 900;
   color: #000;
-  padding-left: 28px;
-  margin-bottom: 28px;
+  padding-left: 30px;
+  margin-bottom: 30px;
   letter-spacing: -0.5px;
 }
 
+/* LEFT RED TRIANGLE */
 .club-title::before {
   content: "";
   position: absolute;
@@ -96,20 +113,22 @@ body {
   border-bottom: 18px solid #9f2027;
 }
 
+/* CLUB ROW */
 .club-row {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 22px;
+  gap: 25px;
   align-items: start;
   justify-items: center;
 }
 
+/* SINGLE CLUB */
 .club {
   text-align: center;
 }
 
 .club img {
-  width: 60px;
+  width: 65px;
   margin-bottom: 10px;
 }
 
@@ -118,7 +137,7 @@ body {
   font-size: 13px;
   font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .club small {
@@ -129,20 +148,85 @@ body {
   line-height: 1.1;
 }
 
-
+/* =========================
+   FOOTER
+========================= */
 .footer {
   background: #9f2027;
   color: white;
-  padding: 50px 0 56px;
+  padding: 55px 0 60px;
   position: relative;
 
+  /* bottom right diagonal cut */
   clip-path: polygon(0 0, 100% 0, 100% 72%, 88% 100%, 0 100%);
 }
 
 .footer h2 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 900;
   line-height: 1.15;
-  max-width: 620px;
+  max-width: 650px;
   text-align: left;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero h3 {
+    font-size: 17px;
+  }
+
+  .club-title {
+    font-size: 24px;
+  }
+
+  .club-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .footer h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .hero {
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 82% 100%, 0 100%);
+  }
+
+  .footer {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 82% 100%, 0 100%);
+  }
+
+  .club-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero h3 {
+    font-size: 15px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
 }
